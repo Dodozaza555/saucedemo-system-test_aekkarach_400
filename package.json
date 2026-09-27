@@ -1,0 +1,24 @@
+{
+  "name": "saucedemo-system-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:purchase": "playwright test tests/system/01-full-purchase.spec.ts",
+    "test:locked-user": "playwright test tests/system/02-locked-user.spec.ts",
+    "test:checkout-validation": "playwright test tests/system/03-checkout-validation.spec.ts",
+    "test:cart-state": "playwright test tests/system/04-cart-state.spec.ts",
+    "test:sort-product": "playwright test tests/system/05-sort-product.spec.ts",
+    "test:remove-before-checkout": "playwright test tests/system/06-remove-before-checkout.spec.ts",
+    "test:missing-postal-code": "playwright test tests/system/07-missing-postal-code.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.2"
+  }
+}
